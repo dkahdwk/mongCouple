@@ -1,4 +1,4 @@
-package com.mongcouple
+package com.fitmong
 
 import android.app.Application
 import com.facebook.react.PackageList

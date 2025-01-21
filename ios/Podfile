@@ -17,7 +17,7 @@ end
 
 install! 'cocoapods', :deterministic_uuids => false
 
-target 'mongCouple' do
+target 'fitmong' do
 
   $config = use_native_modules!
 
@@ -31,7 +31,7 @@ target 'mongCouple' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'mongCoupleTests' do
+  target 'fitmongTests' do
     inherit! :complete
     # Pods for testing
   end
