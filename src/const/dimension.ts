@@ -1,0 +1,3 @@
+export const FOLDABLE_WIDE_WIDTH_SIZE = 500;
+
+export const ZFLIP_COVER_HEIGHT_SIZE = 400;
