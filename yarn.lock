@@ -6446,6 +6446,7 @@ __metadata:
     react-native: 0.76.5
     react-native-auto-height-image: 3.2.4
     react-native-bootsplash: ^6.3.2
+    react-native-config: ^1.5.3
     react-native-gesture-handler: ^2.21.0
     react-native-gifted-charts: ^1.4.56
     react-native-indicators: ^0.17.0
@@ -10178,6 +10179,18 @@ __metadata:
   bin:
     react-native-bootsplash: cli.js
   checksum: e636b1deefe007f372183e98943369893be7a5fc55d137b8683eb5ee2999191a42b41a82e64a13be35decc499fb70c8288ed5bc18b231d62f31f2b22659f7890
+  languageName: node
+  linkType: hard
+
+"react-native-config@npm:^1.5.3":
+  version: 1.5.3
+  resolution: "react-native-config@npm:1.5.3"
+  peerDependencies:
+    react-native-windows: ">=0.61"
+  peerDependenciesMeta:
+    react-native-windows:
+      optional: true
+  checksum: 0eb74e0a10ae6e96422671482da83dea16571f4f5ad848d1f18015dccbecb9cbc066788df72a88c630abf4aed0edb7616ec27704817cff18bd6ed7d61979d671
   languageName: node
   linkType: hard
 
