@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* fitmongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* fitmongTests.m */; };
+		044B30D82D53439D00B47280 /* Pretendard-Black.woff in Resources */ = {isa = PBXBuildFile; fileRef = 044B30CF2D53439C00B47280 /* Pretendard-Black.woff */; };
+		044B30D92D53439D00B47280 /* Pretendard-SemiBold.woff in Resources */ = {isa = PBXBuildFile; fileRef = 044B30D02D53439C00B47280 /* Pretendard-SemiBold.woff */; };
+		044B30DA2D53439D00B47280 /* Pretendard-Regular.woff in Resources */ = {isa = PBXBuildFile; fileRef = 044B30D12D53439C00B47280 /* Pretendard-Regular.woff */; };
+		044B30DB2D53439D00B47280 /* Pretendard-Light.woff in Resources */ = {isa = PBXBuildFile; fileRef = 044B30D22D53439C00B47280 /* Pretendard-Light.woff */; };
+		044B30DC2D53439D00B47280 /* Pretendard-ExtraLight.woff in Resources */ = {isa = PBXBuildFile; fileRef = 044B30D32D53439C00B47280 /* Pretendard-ExtraLight.woff */; };
+		044B30DD2D53439D00B47280 /* Pretendard-Thin.woff in Resources */ = {isa = PBXBuildFile; fileRef = 044B30D42D53439C00B47280 /* Pretendard-Thin.woff */; };
+		044B30DE2D53439D00B47280 /* Pretendard-ExtraBold.woff in Resources */ = {isa = PBXBuildFile; fileRef = 044B30D52D53439D00B47280 /* Pretendard-ExtraBold.woff */; };
+		044B30DF2D53439D00B47280 /* Pretendard-Bold.woff in Resources */ = {isa = PBXBuildFile; fileRef = 044B30D62D53439D00B47280 /* Pretendard-Bold.woff */; };
+		044B30E02D53439D00B47280 /* Pretendard-Medium.woff in Resources */ = {isa = PBXBuildFile; fileRef = 044B30D72D53439D00B47280 /* Pretendard-Medium.woff */; };
 		0C80B921A6F3F58F76C31292 /* libPods-fitmong.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-fitmong.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -31,6 +40,15 @@
 		00E356EE1AD99517003FC87E /* fitmongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fitmongTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* fitmongTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fitmongTests.m; sourceTree = "<group>"; };
+		044B30CF2D53439C00B47280 /* Pretendard-Black.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Black.woff"; path = "../../src/assets/fonts/Pretendard-Black.woff"; sourceTree = "<group>"; };
+		044B30D02D53439C00B47280 /* Pretendard-SemiBold.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-SemiBold.woff"; path = "../../src/assets/fonts/Pretendard-SemiBold.woff"; sourceTree = "<group>"; };
+		044B30D12D53439C00B47280 /* Pretendard-Regular.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Regular.woff"; path = "../../src/assets/fonts/Pretendard-Regular.woff"; sourceTree = "<group>"; };
+		044B30D22D53439C00B47280 /* Pretendard-Light.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Light.woff"; path = "../../src/assets/fonts/Pretendard-Light.woff"; sourceTree = "<group>"; };
+		044B30D32D53439C00B47280 /* Pretendard-ExtraLight.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-ExtraLight.woff"; path = "../../src/assets/fonts/Pretendard-ExtraLight.woff"; sourceTree = "<group>"; };
+		044B30D42D53439C00B47280 /* Pretendard-Thin.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Thin.woff"; path = "../../src/assets/fonts/Pretendard-Thin.woff"; sourceTree = "<group>"; };
+		044B30D52D53439D00B47280 /* Pretendard-ExtraBold.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-ExtraBold.woff"; path = "../../src/assets/fonts/Pretendard-ExtraBold.woff"; sourceTree = "<group>"; };
+		044B30D62D53439D00B47280 /* Pretendard-Bold.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Bold.woff"; path = "../../src/assets/fonts/Pretendard-Bold.woff"; sourceTree = "<group>"; };
+		044B30D72D53439D00B47280 /* Pretendard-Medium.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Medium.woff"; path = "../../src/assets/fonts/Pretendard-Medium.woff"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* fitmong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fitmong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = fitmong/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = fitmong/AppDelegate.mm; sourceTree = "<group>"; };
@@ -85,6 +103,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		044B30CE2D53438900B47280 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				044B30CF2D53439C00B47280 /* Pretendard-Black.woff */,
+				044B30D62D53439D00B47280 /* Pretendard-Bold.woff */,
+				044B30D52D53439D00B47280 /* Pretendard-ExtraBold.woff */,
+				044B30D32D53439C00B47280 /* Pretendard-ExtraLight.woff */,
+				044B30D22D53439C00B47280 /* Pretendard-Light.woff */,
+				044B30D72D53439D00B47280 /* Pretendard-Medium.woff */,
+				044B30D12D53439C00B47280 /* Pretendard-Regular.woff */,
+				044B30D02D53439C00B47280 /* Pretendard-SemiBold.woff */,
+				044B30D42D53439C00B47280 /* Pretendard-Thin.woff */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* fitmong */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +153,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				044B30CE2D53438900B47280 /* fonts */,
 				13B07FAE1A68108700A75B9A /* fitmong */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* fitmongTests */,
@@ -244,7 +279,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044B30DE2D53439D00B47280 /* Pretendard-ExtraBold.woff in Resources */,
+				044B30E02D53439D00B47280 /* Pretendard-Medium.woff in Resources */,
+				044B30D92D53439D00B47280 /* Pretendard-SemiBold.woff in Resources */,
+				044B30DA2D53439D00B47280 /* Pretendard-Regular.woff in Resources */,
+				044B30DF2D53439D00B47280 /* Pretendard-Bold.woff in Resources */,
+				044B30D82D53439D00B47280 /* Pretendard-Black.woff in Resources */,
+				044B30DB2D53439D00B47280 /* Pretendard-Light.woff in Resources */,
+				044B30DC2D53439D00B47280 /* Pretendard-ExtraLight.woff in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				044B30DD2D53439D00B47280 /* Pretendard-Thin.woff in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3D674319BF394B3381220637 /* PrivacyInfo.xcprivacy in Resources */,
 			);
@@ -470,6 +514,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RF777QQSM3;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = fitmong/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = fitmong;
@@ -499,6 +544,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RF777QQSM3;
 				INFOPLIST_FILE = fitmong/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = fitmong;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
