@@ -1,0 +1,93 @@
+diff --git a/node_modules/react-native-auto-height-image/AnimatableImage.js b/node_modules/react-native-auto-height-image/AnimatableImage.js
+index d38d539..c9c9913 100644
+--- a/node_modules/react-native-auto-height-image/AnimatableImage.js
++++ b/node_modules/react-native-auto-height-image/AnimatableImage.js
+@@ -2,9 +2,7 @@ import React from 'react';
+ import PropTypes from 'prop-types';
+ import { Animated, Image, ImageBackground } from 'react-native';
+ 
+-function AnimatableImage(props) {
+-  const { animated, children, ...rest } = props;
+-
++const AnimatableImage = ({ animated = false, children, ...rest }) => {
+   const ImageComponent = children
+     ? ImageBackground
+     : animated
+@@ -16,8 +14,4 @@ function AnimatableImage(props) {
+ 
+ AnimatableImage.propTypes = Image.propTypes | Animated.Image.propTypes;
+ 
+-AnimatableImage.defaultProps = {
+-  animated: false
+-};
+-
+ export default AnimatableImage;
+diff --git a/node_modules/react-native-auto-height-image/AutoHeightImage.js b/node_modules/react-native-auto-height-image/AutoHeightImage.js
+index 9a0e45a..888d07f 100644
+--- a/node_modules/react-native-auto-height-image/AutoHeightImage.js
++++ b/node_modules/react-native-auto-height-image/AutoHeightImage.js
+@@ -13,16 +13,16 @@ import { NOOP, DEFAULT_HEIGHT } from './helpers';
+ // remove `resizeMode` props from `Image.propTypes`
+ const { resizeMode, ...ImagePropTypes } = AnimatableImage.propTypes;
+ 
+-function AutoHeightImage(props) {
+-  const {
+-    onHeightChange,
+-    source,
+-    width,
+-    style,
+-    maxHeight,
+-    onError,
+-    ...rest
+-  } = props;
++const AutoHeightImage = ({
++  maxHeight= Infinity,
++  animated= false,
++  source,
++  width,
++  style,
++  onError,
++  onHeightChange= NOOP,
++  ...rest
++}) => {
+   const [height, setHeight] = useState(
+     getImageSizeFitWidthFromCache(source, width, maxHeight).height ||
+       DEFAULT_HEIGHT
+@@ -82,10 +82,4 @@ AutoHeightImage.propTypes = {
+   animated: PropTypes.bool
+ };
+ 
+-AutoHeightImage.defaultProps = {
+-  maxHeight: Infinity,
+-  onHeightChange: NOOP,
+-  animated: false
+-};
+-
+ export default AutoHeightImage;
+diff --git a/node_modules/react-native-auto-height-image/ImagePolyfill.js b/node_modules/react-native-auto-height-image/ImagePolyfill.js
+index f0018f4..2023df9 100644
+--- a/node_modules/react-native-auto-height-image/ImagePolyfill.js
++++ b/node_modules/react-native-auto-height-image/ImagePolyfill.js
+@@ -10,9 +10,7 @@ const isAndroid = () => Platform.OS === 'android';
+  *
+  * This component should only be used for loading remote images, not local resources.
+  */
+-function ImagePolyfill(props) {
+-  const { source, onError, ...rest } = props;
+-
++const ImagePolyfill = ({ source, onError, animated = false, children, ...rest }) => {
+   const verifyImage = () => {
+     const { uri } = source;
+     Image.prefetch(uri).catch((e) => onError(e));
+@@ -24,10 +22,9 @@ function ImagePolyfill(props) {
+     }
+   }, [source, onError]);
+ 
+-  return <AnimatableImage source={source} {...rest} />;
++  return <AnimatableImage source={source} animated={animated} children={children} {...rest} />;
+ }
+ 
+ ImagePolyfill.propTypes = AnimatableImage.propTypes;
+-ImagePolyfill.defaultProps = AnimatableImage.defaultProps;
+ 
+ export default ImagePolyfill;

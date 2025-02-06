@@ -1,0 +1,13 @@
+diff --git a/node_modules/@emotion/native/types/base.d.ts b/node_modules/@emotion/native/types/base.d.ts
+index a14f22b..82a591c 100644
+--- a/node_modules/@emotion/native/types/base.d.ts
++++ b/node_modules/@emotion/native/types/base.d.ts
+@@ -6,7 +6,7 @@ import * as RN from 'react-native'
+ 
+ type ReactNative = typeof RN
+ 
+-export type ReactNativeStyle = RN.ViewStyle | RN.TextStyle | RN.ImageStyle
++export type ReactNativeStyle = RN.ViewStyle & RN.TextStyle & RN.ImageStyle
+ 
+ export type ReactNativeStyleType<Props> = Props extends {
+   style?: RN.StyleProp<infer StyleType>
